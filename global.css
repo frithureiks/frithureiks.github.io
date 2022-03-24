@@ -1,0 +1,105 @@
+body {
+  font-family: Helvetica;
+  
+  margin: 70px 400px 75px 100px;
+    line-height:1.2;
+}
+
+h2.myheader {
+  font-family: Montserrat;
+    color: #427fda;
+        font-weight: bold;
+          font-size: 44px;
+}
+h2.sectionheader {
+  font-family: Montserrat;
+    
+        font-weight: bold;
+          font-size: 28px;
+    text-decoration: underline;
+  text-decoration-color: #427fda;
+}
+
+ul.mainlist {
+  line-height:1.4;
+  list-style: none; /* Remove default bullets */
+}
+
+ul.publist {
+  font-size:20px;
+  line-height:1.4;
+  list-style: none; /* Remove default bullets */
+}
+ul.mainlist li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #427fda; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+ul.publist li::before {
+  content: "\2014";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #427fda; /* Change the color */
+  font-weight: normal; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1.5em; /* Also needed for space (tweak if needed) */
+  margin-left: -1.5em; /* Also needed for space (tweak if needed) */
+}
+ul.publist li {
+
+  margin-bottom: 0.5em; /* Also needed for space (tweak if needed) */
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2A2826;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+.sidenav a {
+  font-family: Helvetica;
+  padding: 30px 8px 6px 16px;
+  text-decoration: none;
+    font-size: 16px;
+  color: #F8FAFA;
+  display: block;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.7px;
+}
+
+.sidenav a:hover {
+  color: #5CAFEB;
+}
+ a.icon {
+      color: #5CAFEB;
+
+  }
+.sidenav a.icon:hover {
+  color: #F8FAFA;
+}
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 24px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.myimg {
+    max-width: 25%;
+    max-height: 25%;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  
+  
