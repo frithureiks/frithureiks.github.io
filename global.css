@@ -131,8 +131,10 @@ ul.publist {
 }
 
 .myimg {
-    max-width: 25%;
-    max-height: 25%;
+    max-height: 500px;
+    max-width: 368px;
+    height: 25%; 
+    width: 25%
 }
 
 
@@ -140,5 +142,3 @@ ul.publist {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-  
-  
