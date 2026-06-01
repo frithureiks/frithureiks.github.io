@@ -93,13 +93,13 @@ div.sidenav a.active {
 }
 
 div.sidenav a.icon {
-  margin-top: auto;
-  padding: 20px 20px 8px 20px;
-  color: var(--blue-light);
+  padding: 10px 20px;
+  color: rgba(232,240,251,0.6);
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center; /* center horizontally */
   border-right: 3px solid transparent;
+  text-decoration: none;
 }
 
 div.sidenav a.icon:hover {
@@ -109,14 +109,7 @@ div.sidenav a.icon:hover {
 
 div.sidenav a.icon .material-icons {
   font-size: 18px;
-}
-
-div.sidenav a.icon::after {
-  content: "Contact";
-  font-family: 'DM Sans', sans-serif;
-  font-size: 11.5px;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
+  color: var(--blue-light);
 }
 
 /* ── Main content ────────────────────────────── */
@@ -363,6 +356,11 @@ ul.publist.awards li {
   div.sidenav a.icon {
     margin-top: 0;
     padding: 10px 14px;
+  }
+
+  div.sidenav a.icon::after {
+    font-size: 10px;
+    letter-spacing: 0.8px;
   }
 
   div.main {
